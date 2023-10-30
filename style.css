@@ -454,7 +454,7 @@ body {
 }
 
 .general-inicio h2 {
-    font-size: 55px;
+    font-size: 45px;
     line-height: 70px;
     color: #323237;
     text-transform: uppercase;
@@ -1006,8 +1006,8 @@ p {
 
     .serviciop-1 img {
         margin: 35px 0 5px 0;
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 250px;
     }
 
 
