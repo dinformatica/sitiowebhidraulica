@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
 
-/* Color de fondo del sitio web */
+}
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
+    background-color: #E1E2E6;
 }
 
 .container {
@@ -22,23 +22,17 @@ body {
 }
 
 .header {
-    background-image: url(images/bg.jpg);
-    background-position: center top;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(images/bg.jpg);
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
 }
-.header-1 {
-    background-image: url(images/bg2.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
+
 
 .menu {
     position: absolute;
@@ -48,24 +42,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
-
 }
 
-/* Color del texto logo */
-
 .logo {
-    font-size: 24px;
-    color: #FFFFFF;
-    font-weight: 1000;
-    text-transform: uppercase;
-    
-    
+    height: 50px;
 }
 
 .logo img {
-    width: 250px;
-    height: 80px;
+    width: 180px;
+    height: 60px;
 }
 
 .menu .navbar ul li {
@@ -73,19 +58,16 @@ body {
     float: left;
 }
 
-/* Coloe del menu, el primer color es el principal y el otro el secundario */
-
 .menu .navbar ul li a {
-    font-size: 30px;
-    padding: 25px;
-    color: #FFFFFF;
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
     display: block;
-    
+    font-weight: 600;
 }
 
 .menu .navbar ul li a:hover {
-    color: #454892;
-
+    color: #434bb8;
 }
 
 #menu {
@@ -101,178 +83,303 @@ body {
     display: none;
 }
 
-.header-txt {
+.header-content {
     text-align: center;
-    margin-bottom: 65pxs;
 }
 
-/* Color del titulo grande y de los lorem en los trabajadores y titulos en horario telefono direcion */
+.header-content img {
+    width: 250px;
+    height: 80px;
+    margin-top: 50px;
+    align-items: center;
+}
 
 
-.header-txt ,
-span,
-h3 {
-    font-size: 90px;
-    letter-spacing: 5px;
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
     text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    color: #454892;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
-.header-txt h1 {
-    color: #FFFFFF;
-    font-size: 100px;
+.header-content h2 {
+    font-size: 45px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
 }
 
-.header-txt span {
-    font-size: 35px;
-}
-
-/* Color del texto de encabezado */
-
-
-.header-txt p {
-    color: #454892;
+.header-content p {
+    font-size: 16px;
+    color: #C5C5C5;
     padding: 0 250px;
-    margin: 25px 0;
+    margin-bottom: 25px;
+
 }
 
 .btn-1 {
     display: inline-block;
-    padding: 11px 25px;
-    background-color: #454892;
-    color: #FFFFFF;
+    padding: 11px 35px;
+    background-color: #434bb8;
+    color: #F9FAFC;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-    margin: 25px 0;
-    border: 0;
     border-radius: 5px;
 }
 
-
-/* Color de fondo al presionar el boton */
-
 .btn-1:hover {
-    background-color: #6d73b5;
-
+    background-color: #3c3c8c;
 }
 
-.header-dir {
+.coffee-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.coffee-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+
+.coffee-group {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.coffee-1 img {
+    width: 200px;
+}
+
+.coffee-1 {
+    padding: 0 25px;
+}
+
+.coffee-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffee-1 h3 {
+    color: #323237;
+    font-size: 20px;
+    margin-bottom: 15px;
 
 }
 
-.dir h3 {
-    font-size: 28px;
-    color: #FFFFFF;
+
+
+
+.principal {
+    background-color: #393e92;
 }
 
-/* Texto debajo de los titulos en direccion horario y telefono */
-
-
-.dir p {
-    font-size: 32px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
-.welcome {
+.principal-group {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
-.welcome-1 {
-    background-image: url(images/a1.jpg);
+.principal-1 img {
+    width: 200px;
+}
+
+.principal-1 {
+    padding: 0 25px;
+}
+
+.principal-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+}
+
+.principal-1 h2 {
+    color: #F9FAFC;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.principal-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.principal-1 h3 {
+    color: #F9FAFC;
+    font-size: 25px;
+    margin-bottom: 15px;
+
+}
+
+.principal-1 p {
+    font-size: 16px;
+    color: #F9FAFC;
+    margin: 25px 0 45px 0;
+
+}
+
+
+
+
+.contactop {
+    background-color: #393e92;
+}
+
+.contactop-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.contactop-1 img {
+    width: 200px;
+}
+
+.contactop-1 {
+    padding: 0 25px;
+
+}
+
+.contactop-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+}
+
+.contactop-1 h2 {
+    color: #F9FAFC;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.contactop-content {
+    text-align: center;
+    padding: 100px 0;
+
+
+}
+
+
+.contactop-1 h3 {
+    color: #F9FAFC;
+    font-size: 25px;
+    margin-bottom: 15px;
+
+}
+
+.contactop-1 p {
+    font-size: 16px;
+    color: #F9FAFC;
+    margin: 25px 0 45px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(images/bg2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
-    border: 1;
-    min-height: 100vh;
-    
-}
-
-/* Color de fondo del texto Bienvenidos a seingspa */
-.welcome-2 {
-    width: 50%;
-    padding: 150px 250px 150px 100px;
-    background-color: #454892;
-    border: 1;
-    min-height: 100vh;
-    
-
-}
-
-
-/* Color de fondo del texto Bienvenidos a seingspa */
-.welcome-2 h2{
-    color: #FFFFFF;
-}
-
-
-
-/* Color de fondo del texto Bienvenidos a seingspa */
-h2 {
-    font-size: 90px;
-    line-height: 100px;
-    color: #454892;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    margin-bottom: 20px;
-
-}
-
-/* Color de fondo del texto Bienvenidos a seingspa */
-p {
-    font-size: 16px;
-    color: #FFFFFF;
-    margin: 25px 0;
-}
-
-/* Color de fondo del texto Bienvenidos a seingspa */
-.b1 {
-    color: #FFFFFF;
-}
-
-.services {
+    background-attachment: fixed;
     padding: 100px 0;
+
+}
+
+.services-content {
     text-align: center;
 }
 
-.services-txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
-/* Color de fondo del texto Bienvenidos a seingspa */
-hr {
-    border: 1px solid #454892;
-    width: 80px;
-}
-
-.services-txt p {
-    padding: 50px 150px;
-    color: #454892;
+.services-content p {
+    font-size: 16px;
+    color: #C5C5C5;
+    margin-bottom: 50px;
+    padding: 0 100px;
 }
 
 .services-group {
     display: flex;
     justify-content: space-between;
-    margin: 45px 0;
+    margin-bottom: 50px;
 }
 
-/* Color de fondo del texto Bienvenidos a seingspa */
 .services-1 {
-    background-color: #454892;
-    padding: 35px 25px;
-    margin: 0 10px;
-    border-radius: 15px;
+    padding: 0 100px;
 }
 
 .services-1 img {
@@ -280,188 +387,429 @@ hr {
     margin-bottom: 15px;
 }
 
-/* Color de fondo del texto Bienvenidos a seingspa */
 .services-1 h3 {
-    font-size: 25px;
-    color: #FFFFFF;
+    color: #EACCB3;
+    font-size: 18px;
 }
 
-/* Color de fondo del texto Bienvenidos a seingspa */
-.services-1 a {
-    color: #FFFFFF;
-    font-size: 16px;
-}
 
-.prices {
+.general {
     display: flex;
 }
 
-/* Color de fondo del texto Bienvenidos a seingspa */
-.prices-1 {
+.general-1 {
     width: 50%;
-    padding: 150px 150px 150px 150px;
-    background-color: #454892;
-
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
 }
 
-.prices-1 h2 {
-
-    color: #FFFFFF;
-}
-
-table {
-    margin: 50px 0;
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-}
-
-/* Color de fondo del texto Bienvenidos a seingspa */
-tr {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #AFAFAF;
-    margin-bottom: 20px;
-}
-
-/* Color de fondo del texto Bienvenidos a seingspa */
-th {
-    color: #FFFFFF;
-    padding-bottom: 15px;
-}
-
-/* Color de fondo del texto Bienvenidos a seingspa */
-td {
-    color: #FFFFFF;
-}
-
-.prices-2 {
-    background-image: url(images/a2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-}
-
-.personal {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.personal-txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.personal-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 35px;
-}
-
-.personal-1 {
-    text-align: center;
-}
-
-.personal-1 img {
-    width: 250px;
-    border-radius: 15px;
-    margin-bottom: 25px;
-}
-
-.personal-1 h3 {
-    font-size: 22px;
-}
-
-.personal-1 p {
-    padding: 0 50px;
-}
-
-/* Color de fondo del texto Bienvenidos a seingspa */
-.personal-1 a {
-    color: #454892;
-}
-
-.footer-bg {
-    background-image: url(images/bg-2.png);
+.general-2 {
+    background-image: url(images/Servicios/Neumatica/1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    background-color: #454892;
-    
+    width: 50%;
+
 }
 
-.footer-bg h2 {
-    color: #FFFFFF;
+.general-3 {
+    background-image: url(images/Servicios/OleoHidraulica/4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
 }
 
 
-form {
+
+
+
+.general-inicio {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.campo-1 {
+.general-inicio-1 {
+    width: 50%;
+    padding: 100px 190px 100px 100px;
+    background-color: #E1E2E6;
+}
+
+.general-inicio-2 {
+    background-image: url(images/SeingSpa/SeingSpa-18.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.general-inicio-3 {
+    background-image: url(images/SeingSpa/SeingSpa-18.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.general-inicio h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.general-inicio p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+
+}
+
+
+.general-contacto {
+    display: flex;
+}
+
+.general-contacto-1 {
+    width: 50%;
+    padding: 0 0 0 0;
+    background-color: #E1E2E6;
+}
+
+.general-contacto-2 {
+    background-image: url(images/Servicios/Neumatica/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.general-contacto-3 {
+    background-image: url(images/SeingSpa/SeingSpa-1.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+
+
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+
+}
+
+.blog {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px;
     margin-bottom: 15px;
 }
 
-/* Color de fondo del texto Bienvenidos a seingspa */
-.campo {
-    margin: 5px;
-    padding: 20px 15px;
-    width: 350px;
-    background-color: #454892;
-    border: 1px solid #FFFFFF;
-    outline: none;
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-size: 14px;
+.blog-1 h3 {
+    font-size: 25px;
+    color: #323237;
 }
 
-textarea {
-    width: 714px !important;
-}
 
-/* Color de fondo del texto Bienvenidos a seingspa */
-.footer-txt {
+
+
+
+
+
+
+.serviciop {
+    padding: 100px 0;
     text-align: center;
-    padding: 10px;
-    background-color: #454892;
+
 }
 
-/* Color de fondo del texto Bienvenidos a seingspa */
-.footer-txt h1{
-    color: #FFFFFF;
+.serviciop-content {
+    display: flex;
+    justify-content: space-between;
+
 }
 
-/* Codigo para pagina responsive */
-/* Solo se debe modificar este codigo si existe un problema con la vista movil */
+.serviciop-1 {
+    padding: 15px 25px;
+}
+
+.serviciop-1 img {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.serviciop-1 h3 {
+    font-size: 25px;
+    color: #323237;
+}
+
+.serviciop h2 {
+    color: #323237;
+}
+
+
+
+
+
+.equipo {
+    padding: 100px 0;
+    text-align: center;
+
+}
+
+.equipo-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.equipo-1 {
+    padding: 15px 25px;
+}
+
+.equipo-1 img {
+    width: 300px;
+    height: 240px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.equipo-1 h3 {
+    font-size: 16px;
+    color: #323237;
+}
+
+.equipo h2 {
+    color: #323237;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.empresa {
+    display: flex;
+}
+
+.empresa-1 {
+    width: 50%;
+    padding: 100px 190px 100px 100px;
+    background-color: #E1E2E6;
+}
+
+.empresa-2 {
+    background-image: url(images/SeingSpa/SeingSpa-18.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.empresa-3 {
+    background-image: url(images/SeingSpa/SeingSpa-19.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.empresa h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.empresa p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 50px 0;
+    background-color: #434bb8;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    background-color: #434bb8;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.copyright p {
+    color: #F9FAFC;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #C5C5C5;
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+
+
+.et_pb_contact_form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para campos de entrada */
+.et_pb_contact_field {
+    margin-bottom: 15px;
+}
+
+/* Estilo para etiquetas */
+.et_pb_contact_form_label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Estilo para botón de envío */
+.et_pb_contact_submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.et_pb_contact_submit:hover {
+    background-color: #0056b3;
+}
 
 @media(max-width:991px) {
-
     .menu {
-        padding: 20px;
+        padding: 30px;
     }
 
     .menu label {
         display: initial;
     }
 
-    /* Color de fondo del texto Bienvenidos a seingspa */
     .menu .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #FFFFFF;
+        background-color: #323237;
         display: none;
-
     }
 
     .menu .navbar ul li {
@@ -477,108 +825,254 @@ textarea {
     }
 
     .header-content {
-        padding: 80px 30px 50px 30px;
+        padding: 100px 30px;
     }
 
-    .header-txt {
-        margin-bottom: 15px;
-    }
-
-    .header-txt h1 {
-        font-size: 90px;
-    }
-
-    .header-txt p {
+    .header-content p {
         padding: 0;
-        margin: 15px 0;
     }
 
-    .header-dir {
+    .coffee {
+        padding: 30px;
+    }
+
+    .coffee-content h2 {
+        padding: 0;
+    }
+
+    .principal {
+        padding: 30px;
+    }
+
+    .principal-content h2 {
+        padding: 0;
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+    .coffee-group {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
-    .dir p {
-        font-size: 18px;
-    }
-
-    .welcome {
-        flex-direction: column;
-    }
-
-    .welcome-1 {
+    .coffee-img {
         display: none;
     }
 
-    .welcome-2 {
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-        margin-top: 600px;
+    .principal-group {
+        flex-direction: column;
+        margin-bottom: 0;
     }
 
-    h2 {
-        font-size: 70px;
-        line-height: 80px;
+    .principal-img {
+        display: none;
+
     }
 
-    p {
-        margin: 15px 0;
+    .principal-1 img {
+        margin-top: 35px;
     }
 
     .services {
         padding: 30px;
     }
 
-    .services-txt p {
+    .services-content p {
         padding: 0;
     }
 
     .services-group {
         flex-direction: column;
-        margin: 0;
+        margin-bottom: 0;
     }
 
     .services-1 {
-        margin: 0 0 20px 0;
+        margin-bottom: 25px;
     }
 
-    .prices {
+    .general {
         flex-direction: column;
     }
 
-    .prices-1 {
+    .general-1 {
         width: 100%;
         padding: 30px;
         text-align: center;
     }
 
-    table {
-        margin: 25px 0 0 0;
-    }
-
-    .prices-2 {
+    .general-2,
+    .general-3 {
         display: none;
     }
 
-    .personal {
+    .general-contacto {
+        flex-direction: column;
+    }
+
+    .general-contacto-1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .general-contacto-2,
+    .general-contacto-3 {
+        display: none;
+    }
+
+    .general-inicio {
+        flex-direction: column;
+    }
+
+    .general-inicio-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-inicio-2,
+    .general-inicio-3 {
+        display: none;
+    }
+
+
+
+
+
+
+
+    .empresa {
+        flex-direction: column;
+    }
+
+    .empresa-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .empresa-2,
+    .empresa-3 {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .blog {
         padding: 30px;
     }
 
-    .personal-group {
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+
+
+    .serviciop {
+        padding: 30px;
+    }
+
+    .serviciop-content {
+        flex-direction: column;
+    }
+
+    .serviciop-1 {
+        padding: 0;
+    }
+
+    .serviciop-1 img {
+        margin: 35px 0 5px 0;
+        width: 350px;
+        height: 350px;
+    }
+
+
+
+
+
+
+
+
+    .equipo {
+        padding: 30px;
+    }
+
+    .equipo-content {
+        flex-direction: column;
+    }
+
+    .equipo-1 {
+        padding: 0;
+    }
+
+    .equipo-1 img {
+        margin: 35px 0 5px 0;
+        width: 350px;
+        height: 250px;
+    }
+
+
+
+
+
+
+
+    .contactop {
+        padding: 30px;
+    }
+
+    .contactop-content h2 {
+        padding: 0;
+    }
+
+    .contactop-group {
         flex-direction: column;
         margin-bottom: 0;
-    }
-
-    .personal-1 {
-        margin-bottom: 25px;
-    }
-
-    .footer-bg {
+        background-color: #393e92;
         padding: 30px;
     }
 
-    textarea {
-        width: 350px !important;
+    .contactop-img {
+        display: none;
+
+    }
+
+    .contactop-1 img {
+        margin-top: 35px;
+    }
+
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
     }
 
 
