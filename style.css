@@ -14,11 +14,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #E1E2E6;
+
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 200px;
 }
 
 .header {
@@ -28,20 +30,22 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
+
 }
 
 
 .menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 60px;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 .logo {
@@ -61,13 +65,29 @@ body {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
-    color: #FFFDFC;
+    color: #434bb8;
     display: block;
     font-weight: 600;
+    margin-right: 5px;
 }
 
-.menu .navbar ul li a:hover {
+.menu .navbar ul li {
     color: #434bb8;
+}
+
+.menu .navbar a:hover {
+    background: #434bb8;
+    color: #E1E2E6;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+    
+}
+
+.menu .navbar a.selected {
+    background: #434bb8;
+    color: #E1E2E6;
+    border-radius: 4px;
+    
 }
 
 #menu {
@@ -737,7 +757,7 @@ p {
 .copyright {
     background-color: #434bb8;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px 5px;
 }
 
 .copyright p {
