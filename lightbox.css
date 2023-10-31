@@ -14,20 +14,15 @@ body.lb-disable-scrolling {
 }
 
 .lightbox {
-  position: fixed;
-  top: 50%; /* Centra verticalmente */
-  left: 50%; /* Centra horizontalmente */
-  transform: translate(-50%, -50%); /* Centra el contenido */
-
-
-  
-  
+  position: absolute;
+  left: 0;
   width: 100%;
   z-index: 10000;
   text-align: center;
   line-height: 0;
   font-weight: normal;
   outline: none;
+  margin: 100px 0px;
 }
 
 .lightbox .lb-image {
