@@ -78,16 +78,17 @@ body {
 .menu .navbar a:hover {
     background: #434bb8;
     color: #E1E2E6;
-    transition: all 0.5s ease;
+    transition: all 0.1s ease;
     border-radius: 4px;
-    
+
 }
 
 .menu .navbar a.selected {
     background: #434bb8;
     color: #E1E2E6;
     border-radius: 4px;
-    
+    transition: all 0.1s ease;
+
 }
 
 #menu {
@@ -153,6 +154,17 @@ body {
     background-color: #3c3c8c;
 }
 
+
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+
+
 .coffee-content {
     text-align: center;
     padding: 100px 0;
@@ -166,14 +178,6 @@ body {
     padding: 0 250px;
     margin-bottom: 15px;
 }
-
-.txt-p {
-    font-size: 16px;
-    color: #414247;
-    padding: 0 250px;
-    margin-bottom: 35px;
-}
-
 
 .coffee-group {
     display: flex;
@@ -201,6 +205,79 @@ body {
     margin-bottom: 15px;
 
 }
+
+
+
+
+
+
+
+
+
+
+.galeria-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.galeria-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.galeria-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.galeria-1 img {
+    width: 200px;
+}
+
+.galeria-1 {
+    padding: 0 25px;
+}
+
+.galeria-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.galeria-1 h3 {
+    color: #323237;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -444,6 +521,325 @@ body {
 
 
 
+.general-servicio {
+    display: flex;
+}
+
+.general-servicio-1 {
+    width: 60%;
+    padding: 100px 90px 100px 100px;
+    background-color: #E1E2E6;
+    min-height: 100vh;
+}
+
+.general-servicio-2 {
+    background-image: url(images/Servicios/OleoHidraulica/7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-height: 100vh;
+
+}
+
+.general-servicio-3 {
+    background-image: url(images/Servicios/Neumatica/2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    min-height: 100vh;
+
+}
+
+.general-servicio h2 {
+    font-size: 45px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.general-servicio p {
+    font-size: 16px;
+    color: #414247;
+    margin: 15px 0 10px 0;
+
+}
+
+
+
+
+
+
+.general-servicios {
+    display: flex;
+}
+
+.general-servicios-1 {
+    width: 60%;
+    padding: 100px 90px 100px 100px;
+    background-color: #E1E2E6;
+    min-height: 100vh;
+}
+
+.general-servicios-2 {
+    background-image: url(images/Servicios/Electrica/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-height: 100vh;
+
+}
+
+.general-servicios-3 {
+    background-image: url(images/Servicios/Maestranza/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    min-height: 100vh;
+
+}
+
+.general-servicios h2 {
+    font-size: 45px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.general-servicios p {
+    font-size: 16px;
+    color: #414247;
+    margin: 15px 0 10px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.general-producto {
+    display: flex;
+}
+
+.general-producto-1 {
+    width: 60%;
+    padding: 100px 90px 100px 100px;
+    background-color: #E1E2E6;
+    min-height: 100vh;
+}
+
+.general-producto-2 {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-height: 100vh;
+
+}
+
+.general-producto-3 {
+    background-image: url(images/Servicios/OleoHidraulica/4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    min-height: 100vh;
+
+}
+
+.general-producto h2 {
+    font-size: 45px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.general-producto p {
+    font-size: 16px;
+    color: #414247;
+    margin: 15px 0 10px 0;
+
+}
+
+.gallery-product {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.slider-box {
+    width: 650px;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s linear infinite;
+}
+
+.slider-box li {
+    width: 25%;
+    list-style: none;
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #e0e0e0;
+}
+
+.texto h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.slider-box img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    12.5% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    37.5% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    62.5% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    87.5% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 .general-inicio {
     display: flex;
@@ -465,7 +861,7 @@ body {
 }
 
 .general-inicio-3 {
-    background-image: url(images/SeingSpa/SeingSpa-18.jpeg);
+    background-image: url(images/Servicios/OleoHidraulica/1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -577,6 +973,7 @@ p {
 .serviciop-content {
     display: flex;
     justify-content: space-between;
+    padding: 75px;
 
 }
 
@@ -586,7 +983,7 @@ p {
 
 .serviciop-1 img {
     width: 250px;
-    height: 200px;
+    height: 300px;
     border-radius: 15px;
     margin-bottom: 15px;
 }
@@ -613,6 +1010,8 @@ p {
 .equipo-content {
     display: flex;
     justify-content: space-between;
+    padding: 75px;
+
 
 }
 
@@ -622,7 +1021,7 @@ p {
 
 .equipo-1 img {
     width: 300px;
-    height: 240px;
+    height: 220px;
     border-radius: 15px;
     margin-bottom: 15px;
 }
@@ -634,6 +1033,7 @@ p {
 
 .equipo h2 {
     color: #323237;
+    margin-bottom: 15px;
 }
 
 
@@ -860,6 +1260,64 @@ p {
         padding: 0;
     }
 
+    .coffee-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .coffee-img {
+        display: none;
+    }
+
+
+
+
+
+
+
+    .galeria {
+        padding: 30px;
+    }
+
+    .galeria-content h2 {
+        padding: 0;
+    }
+
+    .galeria-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .galeria-img {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .principal {
         padding: 30px;
     }
@@ -872,10 +1330,7 @@ p {
         padding: 0;
     }
 
-    .coffee-group {
-        flex-direction: column;
-        margin-bottom: 0;
-    }
+
 
     .gallery-product {
         display: flex;
@@ -883,7 +1338,7 @@ p {
         justify-content: center;
         align-items: center;
     }
-    
+
     .gallery {
         display: flex;
         flex-wrap: wrap;
@@ -891,23 +1346,20 @@ p {
         flex-direction: column;
         margin-bottom: 0;
     }
-    
+
     .gallery a {
         flex: 1;
         margin: 10px;
     }
-    
+
     .gallery img {
         max-width: 100%;
         height: auto;
     }
-    
 
-    
 
-    .coffee-img {
-        display: none;
-    }
+
+
 
 
     .principal-group {
