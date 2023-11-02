@@ -379,7 +379,7 @@ body {
 }
 
 
-.contactop-1 h3 {
+.contactop-content h3 {
     color: #F9FAFC;
     font-size: 35px;
     margin-bottom: 15px;
@@ -396,11 +396,12 @@ body {
 
 
 .contacto-formulario {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
-    background-color: #393e92;
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
@@ -416,9 +417,6 @@ body {
 .contacto-formulario label {
     display: block;
     margin: 10px 0;
-    color: #e0e0e0;
-    font-size: 20px;
-    margin-bottom: 5px;
 }
 
 .contacto-formulario input[type="text"],
@@ -426,24 +424,32 @@ input[type="email"],
 input[type="tel"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 11px 35px; /* Aplicamos el mismo estilo que al botón */
     margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    background-color: #F9FAFC;  /* Fondo del input */
+    color: #434bb8; /* Color del texto del input */
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto-formulario input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    color: #000; /* Ajustamos el color del texto de los input de texto y email */
 }
 
 .contacto-formulario input[type="submit"] {
-    display: inline-block;
-        padding: 11px 35px;
-        background-color: #434bb8;
-        color: #F9FAFC;
-        text-transform: uppercase;
-        border-radius: 5px;
+    background-color: #F9FAFC;  /* Fondo del botón */
+    color: #434bb8; /* Color del texto del botón */
+    padding: 11px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .contacto-formulario input[type="submit"]:hover {
-    background-color: #393e92;
-    
+    background-color: #3a42a9; /* Color de fondo al pasar el ratón */
 }
 
 
@@ -1338,17 +1344,8 @@ p {
         display: none;
     }
 
-
-
-
-
-
-
-
-
-
     .contacto-formulario {
-        max-width: 100%;
+        max-width: 900%;
         padding: 10px;
     }
 
