@@ -353,6 +353,7 @@ body {
 
 .contactop-1 {
     padding: 0 25px;
+    width: 500px;
 
 }
 
@@ -380,7 +381,7 @@ body {
 
 .contactop-1 h3 {
     color: #F9FAFC;
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 15px;
 
 }
@@ -393,6 +394,57 @@ body {
 }
 
 
+
+.contacto-formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #393e92;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contacto-formulario h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.contacto-formulario form {
+    text-align: left;
+}
+
+.contacto-formulario label {
+    display: block;
+    margin: 10px 0;
+    color: #e0e0e0;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contacto-formulario input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contacto-formulario input[type="submit"] {
+    display: inline-block;
+        padding: 11px 35px;
+        background-color: #434bb8;
+        color: #F9FAFC;
+        text-transform: uppercase;
+        border-radius: 5px;
+}
+
+.contacto-formulario input[type="submit"]:hover {
+    background-color: #393e92;
+    
+}
 
 
 
@@ -1144,6 +1196,23 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
     padding: 50px 0;
     background-color: #434bb8;
@@ -1268,6 +1337,58 @@ p {
     .coffee-img {
         display: none;
     }
+
+
+
+
+
+
+
+
+
+
+    .contacto-formulario {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contacto-formulario input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        padding: 5px;
+    }
+
+    .contacto-formulario input[type="submit"] {
+        padding: 8px 12px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
