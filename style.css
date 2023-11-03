@@ -396,12 +396,11 @@ body {
 
 
 .contacto-formulario {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #393e92;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
@@ -417,6 +416,8 @@ body {
 .contacto-formulario label {
     display: block;
     margin: 10px 0;
+    color: #F9FAFC;
+    font-size: 16px;
 }
 
 .contacto-formulario input[type="text"],
@@ -433,19 +434,25 @@ textarea {
     border-radius: 5px;
 }
 
+.contacto-formulario textarea {
+    height: 200px;
+}
+
 .contacto-formulario input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    color: #000; /* Ajustamos el color del texto de los input de texto y email */
+    color: #3a42a9; /* Ajustamos el color del texto de los input de texto y email */
 }
 
 .contacto-formulario input[type="submit"] {
-    background-color: #F9FAFC;  /* Fondo del botón */
-    color: #434bb8; /* Color del texto del botón */
+    background-color: #434bb8;  /* Fondo del botón */
+    color: #F9FAFC; /* Color del texto del botón */
     padding: 11px 35px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: ;
+    
 }
 
 .contacto-formulario input[type="submit"]:hover {
@@ -454,7 +461,7 @@ input[type="tel"] {
 
 
 
-
+"10.208.11.36"; "fe80::4d5e:9d44:45f0:2233"
 
 
 
@@ -1353,7 +1360,7 @@ p {
     input[type="email"],
     input[type="tel"],
     textarea {
-        padding: 5px;
+        padding: 10px;
     }
 
     .contacto-formulario input[type="submit"] {
