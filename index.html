@@ -84,12 +84,14 @@
                 accusantium, consequuntur consectetur sed labore placeat ea quidem ratione. Provident in praesentium
                 animi corrupti!
             </p>
-            <a href="#" class="btn-1">Informacion</a>
+            <a href="#bienvenida" class="btn-1 bottom-button scroll-button">
+                <img src="images/SVG/chevron-down.svg" alt="Icono Chevron Down">
+              </a>
         </div>
 
     </header>
 
-    <section class="general-inicio">
+    <section class="general-inicio" id="bienvenida">
         <div class="general-inicio-1">
             <h2>BIENVENIDOS A SEING</h2>
             <p>Somos una empresa formada por un grupo de ingenieros y técnicos profesionales con amplia experiencia en
@@ -111,7 +113,7 @@
                 de integrar más de un servicio en un mismo proyecto y a la medida de lo requerido.</p>
             <a href="#" class="btn-1">Informacion</a>
         </div>
-
+        
     </section>
 
     <main class="principal">
@@ -151,9 +153,8 @@
 
     </main>
 
-    <section class="serviciop container">
+    <section class="serviciop">
         <h2>Nuestros Servicios</h2>
-        <br>
         <div class="serviciop-content">
             <div class="serviciop-1">
                 <img src="images/SeingSpa/hidraulica.jpeg" alt="">
@@ -238,6 +239,23 @@
     <div class="copyright">
         <p>Creado por Sergio Vargas &copy; 2023. Todos los derechos reservados.</p>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Añade un evento de clic al botón con la clase "scroll-button"
+            $(".scroll-button").click(function(event) {
+                event.preventDefault(); // Previene el comportamiento predeterminado del enlace
+        
+                var target = $(this).attr("href"); // Obtiene el valor del atributo href (en este caso, "#ubicacion")
+                var offset = $(target).offset().top; // Obtiene la posición vertical de la sección de destino
+        
+                // Realiza un desplazamiento suave hacia la sección de destino
+                $("html, body").animate({ scrollTop: offset }, 800);
+            });
+        });
+        </script>
 </body>
 
 </html>

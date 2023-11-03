@@ -284,7 +284,9 @@ body {
 
 .principal {
     background-color: #393e92;
+    min-height: 90vh;
 }
+
 
 .principal-group {
     display: flex;
@@ -297,7 +299,7 @@ body {
 }
 
 .principal-1 {
-    padding: 0 25px;
+    padding: 0 45px;
 }
 
 .principal-img {
@@ -316,7 +318,8 @@ body {
 
 .principal-content {
     text-align: center;
-    padding: 100px 0;
+    padding: 350px 0;
+    margin: 0px 120px 0px;
 }
 
 
@@ -339,6 +342,7 @@ body {
 
 .contactop {
     background-color: #393e92;
+    min-height: 64vh;
 }
 
 .contactop-group {
@@ -425,10 +429,13 @@ input[type="email"],
 input[type="tel"],
 textarea {
     width: 100%;
-    padding: 11px 35px; /* Aplicamos el mismo estilo que al botón */
+    padding: 11px 35px;
+    /* Aplicamos el mismo estilo que al botón */
     margin: 5px 0;
-    background-color: #F9FAFC;  /* Fondo del input */
-    color: #434bb8; /* Color del texto del input */
+    background-color: #F9FAFC;
+    /* Fondo del input */
+    color: #434bb8;
+    /* Color del texto del input */
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
@@ -441,39 +448,27 @@ textarea {
 .contacto-formulario input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    color: #3a42a9; /* Ajustamos el color del texto de los input de texto y email */
+    color: #3a42a9;
+    /* Ajustamos el color del texto de los input de texto y email */
 }
 
 .contacto-formulario input[type="submit"] {
-    background-color: #434bb8;  /* Fondo del botón */
-    color: #F9FAFC; /* Color del texto del botón */
+    background-color: #434bb8;
+    /* Fondo del botón */
+    color: #F9FAFC;
+    /* Color del texto del botón */
     padding: 11px 35px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: ;
-    
+
+
 }
 
 .contacto-formulario input[type="submit"]:hover {
-    background-color: #3a42a9; /* Color de fondo al pasar el ratón */
+    background-color: #3a42a9;
+    /* Color de fondo al pasar el ratón */
 }
-
-
-
-"10.208.11.36"; "fe80::4d5e:9d44:45f0:2233"
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -586,15 +581,114 @@ input[type="tel"] {
 
 
 
+
+.general-ubicacion {
+    display: flex;
+}
+
+.general-ubicacion-1 {
+    width: 60%;
+    padding: 100px 90px 100px 100px;
+    background-color: #E1E2E6;
+    min-height: 90vh;
+}
+
+.general-ubicacion-2 {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-height: 100vh;
+
+}
+
+.general-ubicacion-3 {
+    background-image: url(images/Servicios/Neumatica/2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    min-height: 100vh;
+
+}
+
+.general-ubicacion h2 {
+    font-size: 45px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.general-ubicacion p {
+    font-size: 20px;
+    color: #414247;
+    margin: 15px 0 10px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .general-servicio {
     display: flex;
+    min-height: 50vh;
 }
 
 .general-servicio-1 {
     width: 60%;
     padding: 100px 90px 100px 100px;
     background-color: #E1E2E6;
-    min-height: 100vh;
+    
 }
 
 .general-servicio-2 {
@@ -603,7 +697,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    min-height: 100vh;
+    
 
 }
 
@@ -613,7 +707,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 60%;
-    min-height: 100vh;
+    
 
 }
 
@@ -640,13 +734,14 @@ input[type="tel"] {
 
 .general-servicios {
     display: flex;
+    min-height: 50vh;
 }
 
 .general-servicios-1 {
     width: 60%;
     padding: 100px 90px 100px 100px;
     background-color: #E1E2E6;
-    min-height: 100vh;
+    
 }
 
 .general-servicios-2 {
@@ -655,7 +750,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    min-height: 100vh;
+    
 
 }
 
@@ -665,7 +760,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 60%;
-    min-height: 100vh;
+   
 
 }
 
@@ -688,6 +783,36 @@ input[type="tel"] {
 
 
 
+
+.bottom-button {
+    display: block;
+    width: 30px;
+    height: 50px;
+    background-color: #3a42a9;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.bottom-button:hover {
+    background-color: #434bb8;
+}
+
+.bottom-button img {
+    /* Aplica estilos al icono SVG */
+    position: absolute;
+    top: -95%;
+    transform: translateY(-50%);
+    transform: translatex(-50%);
+    width: 60px;
+    height: 45px;
+}
 
 
 
@@ -746,13 +871,14 @@ input[type="tel"] {
 
 .general-producto {
     display: flex;
+    min-height: 50vh;
 }
 
 .general-producto-1 {
     width: 60%;
     padding: 100px 90px 100px 100px;
     background-color: #E1E2E6;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 .general-producto-2 {
@@ -761,7 +887,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    min-height: 100vh;
+    min-height: 50vh;
 
 }
 
@@ -771,7 +897,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 60%;
-    min-height: 100vh;
+    min-height: 50vh;
 
 }
 
@@ -819,9 +945,11 @@ input[type="tel"] {
 
 
 .slider-box {
-    width: 650px;
+    width: auto;
     height: auto;
     overflow: hidden;
+    min-height: 50vh;
+
 
 }
 
@@ -830,10 +958,11 @@ input[type="tel"] {
     padding: 0;
     width: 400%;
     animation: slide 16s linear infinite;
+
 }
 
 .slider-box li {
-    width: 25%;
+    width: 35%;
     list-style: none;
     position: relative;
 }
@@ -842,7 +971,7 @@ input[type="tel"] {
     position: absolute;
     text-align: center;
     padding: 0 250px;
-    top: 250px;
+    
     color: #e0e0e0;
 }
 
@@ -853,8 +982,9 @@ input[type="tel"] {
 
 .slider-box img {
     width: 100%;
-    height: 700px;
+    height: 500px;
     object-fit: cover;
+
 }
 
 
@@ -908,6 +1038,8 @@ input[type="tel"] {
 
 .general-inicio {
     display: flex;
+    min-height: 40vh;
+
 }
 
 .general-inicio-1 {
@@ -923,6 +1055,7 @@ input[type="tel"] {
     background-size: cover;
     width: 50%;
 
+
 }
 
 .general-inicio-3 {
@@ -931,6 +1064,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
+
 
 }
 
@@ -1032,13 +1166,15 @@ p {
 .serviciop {
     padding: 100px 0;
     text-align: center;
+    min-height: 100vh;
 
 }
 
 .serviciop-content {
     display: flex;
     justify-content: space-between;
-    padding: 75px;
+    padding: 80px;
+    margin: 15px 120px 0px;
 
 }
 
@@ -1052,6 +1188,61 @@ p {
     border-radius: 15px;
     margin-bottom: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.general-ubicacion-1 img {
+    width: 600px;
+    height: 420px;
+    border-radius: 15px;
+}
+
+.general-ubicacion-1 h3 {
+    font-size: 25px;
+    line-height: 30px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+
+.general-ubicacion-1 p {
+    font-size: 20px;
+    color: #414247;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .serviciop-1 h3 {
     font-size: 25px;
@@ -1069,6 +1260,7 @@ p {
 .equipo {
     padding: 100px 0;
     text-align: center;
+    min-height: 100vh;
 
 }
 
@@ -1076,6 +1268,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 75px;
+    margin: 0px 120px 0px;
 
 
 }
@@ -1133,6 +1326,7 @@ p {
 
 .empresa {
     display: flex;
+    min-height: 50vh;
 }
 
 .empresa-1 {
@@ -1401,11 +1595,11 @@ p {
 
 
     .galeria {
-        padding: 30px;
+        padding: 10px;
     }
 
     .galeria-content h2 {
-        padding: 0;
+        padding: 15px;
     }
 
     .galeria-group {
@@ -1443,17 +1637,15 @@ p {
 
 
 
-    .principal {
-        padding: 30px;
+    .principal-content {
+        padding: 20px 0; /* Ajustamos el espacio en la parte superior e inferior */
     }
 
-    .principal-content h2 {
-        padding: 0;
+    .principal-1 {
+        padding: 10px 0; /* Ajustamos el espacio en los elementos principal-1 */
     }
 
-    .txt-p {
-        padding: 0;
-    }
+    
 
 
 
@@ -1484,12 +1676,27 @@ p {
 
 
 
+    .general-inicio {
+        flex-direction: column;
+    }
+
+    .general-inicio-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-inicio-2,
+    .general-inicio-3 {
+        display: none;
+    }
+
 
 
 
     .principal-group {
         flex-direction: column;
-        margin-bottom: 0;
+       
     }
 
     .principal-img {
@@ -1500,6 +1707,10 @@ p {
     .principal-1 img {
         margin-top: 35px;
     }
+
+
+
+
 
     .services {
         padding: 30px;
@@ -1618,7 +1829,7 @@ p {
         display: none;
     }
 
-    
+
 
 
 
@@ -1633,14 +1844,14 @@ p {
 
     .general-producto {
         flex-direction: column;
-        
+
     }
 
     .general-producto-1 {
         width: 100%;
         padding: 25px 50px 25px 50px;
         text-align: center;
-    
+
     }
 
     .general-producto-2,
@@ -1694,79 +1905,104 @@ p {
     }
 
 
-    .serviciop {
-        padding: 25px;
-    }
-
     .serviciop-content {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column; /* Cambiamos a dirección de columna */
+        align-items: center; /* Centramos los elementos verticalmente */
     }
 
     .serviciop-1 {
-        padding: 0;
+        text-align: center; /* Centramos el contenido */
+        margin-bottom: 20px; /* Agregamos margen inferior para separar los elementos */
     }
 
-    .serviciop-1 img {
-        margin: 25px 0 5px 0;
-        width: 300px;
-        height: 250px;
+    
+    
+    .btn-1 {
+        margin-top: 20px; /* Agregamos margen superior al botón para separarlo */
     }
 
 
 
 
-
-    .equipo {
-        padding: 30px;
-    }
 
     .equipo-content {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column; /* Cambiamos a dirección de columna */
+        align-items: center; /* Centramos los elementos verticalmente */
     }
 
     .equipo-1 {
-        padding: 0;
+        text-align: center; /* Centramos el contenido */
+        margin-bottom: 20px; /* Agregamos margen inferior para separar los elementos */
     }
-
+    
     .equipo-1 img {
-        margin: 35px 0 5px 0;
-        width: 350px;
-        height: 250px;
+        width: 350px; /* Hacemos que las imágenes sean responsivas y no excedan su contenedor */
+        height: 300px;
     }
 
-
-
-
-    .contactop {
-        padding: 30px;
+    .equipo-1 h2 {
+         padding: 30px;
     }
 
-    .contactop-content h2 {
-        padding: 0;
+    .general-ubicacion {
+        text-align: center; /* Centra todo el contenido horizontalmente */
     }
+
+    .general-ubicacion-1, .general-ubicacion-2 {
+        width: 100%; /* Asegura que ambos elementos ocupen el ancho completo */
+        margin-bottom: 20px; /* Agrega margen inferior entre ellos */
+    }
+
+    .general-ubicacion-1 h2 {
+        margin-top: 0; /* Elimina el margen superior del encabezado */
+    }
+
+    .general-ubicacion-2 img {
+        max-width: 50%; /* Cambia el tamaño de la imagen al 50% del ancho del contenedor */
+        display: block; /* Elimina cualquier margen adicional alrededor de la imagen */
+        margin: 0 auto; /* Centra horizontalmente la imagen */
+    }
+
+    .general-ubicacion-3 {
+        width: 100%;
+    }
+    
+    .general-ubicacion-3 iframe {
+        width: 100%;
+        height: 300px; /* Ajusta la altura del mapa para dispositivos pequeños */
+        margin: 0 auto; /* Centra horizontalmente el mapa */
+    }
+
+    
+
+
+
+
 
     .contactop-group {
-        flex-direction: column;
-        margin-bottom: 0;
-        background-color: #393e92;
-        padding: 30px;
+        display: flex;
+        flex-direction: column; /* Cambiamos a dirección de columna */
+        align-items: center; /* Centramos los elementos verticalmente */
+        
     }
 
-    .contactop-img {
-        display: none;
-
-    }
-
-    .contactop-1 img {
-        margin-top: 35px;
+    .contactop-1 {
+        text-align: center; /* Centramos el contenido */
+        margin-bottom: 20px; /* Agregamos margen inferior para separar los elementos */
+        
     }
 
     .contactop-1 p {
-        padding: 25px 0 25px 0;
-
+        padding: 20px;
+    }
+    
+    .btn-1 {
+        margin-top: 20px; /* Agregamos margen superior al botón para separarlo */
     }
 
-   
+
 
 
 

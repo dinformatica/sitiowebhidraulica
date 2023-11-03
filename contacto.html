@@ -45,8 +45,6 @@
             background-color: #128C7E;
             /* Cambia el color al pasar el mouse */
         }
-
-        
     </style>
 
 </head>
@@ -76,7 +74,7 @@
     </div>
 
     <header class="header">
-    
+
         <div class="header-content container">
 
             <h2>Contacto</h2>
@@ -86,47 +84,33 @@
                 accusantium, consequuntur consectetur sed labore placeat ea quidem ratione. Provident in praesentium
                 animi corrupti!
             </p>
-            <a href="#" class="btn-1">Informacion</a>
+            <a href="#ubicacion" class="btn-1 bottom-button scroll-button">
+                <img src="images/SVG/chevron-down.svg" alt="Icono Chevron Down">
+              </a>
         </div>
 
     </header>
 
-    <div class="contactop">
-        <div class="contactop-content container">
-            <img src="images/SVG/message-2.svg" alt="" style="width: 55px; height: 55px;"> 
-            <h3>Formulario de contacto</h3> 
-                    <br>
-                    <div class="contacto-formulario">
-                        
-                        <form action="procesar_formulario.php" method="post">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                            
-                            <label for="email">Correo Electrónico:</label>
-                            <input type="email" id="email" name="email" required>
-                            
-                            <label for="telefono">Teléfono:</label>
-                            <input type="tel" id="telefono" name="telefono" required>
-                            
-                            <label for="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                            
-                            <input type="submit" value="Enviar">
-                        </form>
-                    </div>
-        </div>
-    </div>
+    <section class="general-ubicacion" id="ubicacion">
+        <div class="general-ubicacion-1">
 
-    <section class="general-contacto">
-        <div class="general-contacto-3"></div>
-        <div class="general-contacto-1">
-            <div class="et_pb_code_inner"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12776.44766554714!2d-73.049208!3d-36.815838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5c9ad784df7%3A0x38e904976a2c249a!2zSm9hcXXDrW4gUHJpZXRvIDExNjAsIENvbmNlcGNpw7NuLCBCw61vIELDrW8!5e0!3m2!1ses!2scl!4v1594065165002!5m2!1ses!2scl"
-                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe></div>
+            <h2>Nuestra Ubicacion</h2>
+            <h3>Dirección</h3>
+            <p>Joaquin Prieto 1160, Concepción.</p>
+            <h3>Correo Electrónico</h3>
+            <p>afuentealba@seingspa.cl</p>
+            <h3>Teléfonos de contacto</h3>
+            <p>+569 9280 3367</p>
+            <br>
+            <img src="images/SeingSpa/SeingSpa-1.jpeg" alt="">
         </div>
 
+        <div class="general-ubicacion-2"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12776.44766554714!2d-73.049208!3d-36.815838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5c9ad784df7%3A0x38e904976a2c249a!2zSm9hcXXDrW4gUHJpZXRvIDExNjAsIENvbmNlcGNpw7NuLCBCw61vIELDrW8!5e0!3m2!1ses!2scl!4v1594065165002!5m2!1ses!2scl"
+                width="100%" height="1000" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe></div>   
     </section>
+    
 
     <footer class="footer">
         <div class="footer-content container">
@@ -159,6 +143,24 @@
     <div class="copyright">
         <p>Creado por Sergio Vargas &copy; 2023. Todos los derechos reservados.</p>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Añade un evento de clic al botón con la clase "scroll-button"
+            $(".scroll-button").click(function(event) {
+                event.preventDefault(); // Previene el comportamiento predeterminado del enlace
+        
+                var target = $(this).attr("href"); // Obtiene el valor del atributo href (en este caso, "#ubicacion")
+                var offset = $(target).offset().top; // Obtiene la posición vertical de la sección de destino
+        
+                // Realiza un desplazamiento suave hacia la sección de destino
+                $("html, body").animate({ scrollTop: offset }, 800);
+            });
+        });
+        </script>
+        
 </body>
 
 </html>
