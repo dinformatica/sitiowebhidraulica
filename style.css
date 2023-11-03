@@ -582,6 +582,23 @@ input[type="tel"] {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .general-ubicacion {
     display: flex;
 }
@@ -591,6 +608,30 @@ input[type="tel"] {
     padding: 100px 90px 100px 100px;
     background-color: #E1E2E6;
     min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.general-ubicacion-1 img {
+    max-width: 100%; /* Asegúrate de que la imagen no sea más ancha que su contenedor */
+    margin: 20px 0; /* Agrega espacio entre el texto y la imagen */
+}
+
+.general-ubicacion h2 {
+    font-size: 45px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.general-ubicacion p {
+    font-size: 20px;
+    color: #414247;
+    margin: 0px 0 0px 0;
 }
 
 .general-ubicacion-2 {
@@ -602,51 +643,6 @@ input[type="tel"] {
     min-height: 100vh;
 
 }
-
-.general-ubicacion-3 {
-    background-image: url(images/Servicios/Neumatica/2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 60%;
-    min-height: 100vh;
-
-}
-
-.general-ubicacion h2 {
-    font-size: 45px;
-    line-height: 70px;
-    color: #323237;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-
-.general-ubicacion p {
-    font-size: 20px;
-    color: #414247;
-    margin: 15px 0 10px 0;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1421,24 +1417,26 @@ p {
 
 
 .footer {
-    padding: 50px 0;
+    padding: 20px 0; /* Ajusta los valores de padding según tus necesidades */
     background-color: #434bb8;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* O utiliza 'space-between' o 'flex-start' según tus necesidades */
 }
 
 .copyright {
     background-color: #434bb8;
     text-align: center;
-    padding: 5px 5px;
+    padding: 5px 0; /* Ajusta el valor de padding para reducir el espacio horizontal */
+    margin: 0; /* Ajusta el valor de margin para reducir el espacio superior e inferior */
 }
 
 .copyright p {
     color: #F9FAFC;
 }
+
 
 .link h3 {
     font-size: 18px;
