@@ -352,6 +352,7 @@ body {
     font-size: 25px;
     color: #323237;
 }
+
 .EquipoEmpresa h2 {
     padding-bottom: 25px;
 }
@@ -943,14 +944,19 @@ input[type="tel"] {
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido */
-    align-items: center; /* Centra horizontalmente el contenido */
-    text-align: center; /* Alinea el texto al centro */
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    align-items: center;
+    /* Centra horizontalmente el contenido */
+    text-align: center;
+    /* Alinea el texto al centro */
 }
 
 .general-ubicacion-1 img {
-    max-width: 100%; /* Asegúrate de que la imagen no sea más ancha que su contenedor */
-    margin: 20px 0; /* Agrega espacio entre el texto y la imagen */
+    max-width: 100%;
+    /* Asegúrate de que la imagen no sea más ancha que su contenedor */
+    margin: 20px 0;
+    /* Agrega espacio entre el texto y la imagen */
 }
 
 .general-ubicacion h2 {
@@ -1017,7 +1023,7 @@ input[type="tel"] {
     width: 60%;
     padding: 100px 90px 100px 100px;
     background-color: #E1E2E6;
-    
+
 }
 
 .general-servicio-2 {
@@ -1026,7 +1032,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    
+
 
 }
 
@@ -1036,7 +1042,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 60%;
-    
+
 
 }
 
@@ -1070,7 +1076,7 @@ input[type="tel"] {
     width: 60%;
     padding: 100px 90px 100px 100px;
     background-color: #E1E2E6;
-    
+
 }
 
 .general-servicios-2 {
@@ -1079,7 +1085,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    
+
 
 }
 
@@ -1089,7 +1095,7 @@ input[type="tel"] {
     background-repeat: no-repeat;
     background-size: cover;
     width: 60%;
-   
+
 
 }
 
@@ -1300,7 +1306,7 @@ input[type="tel"] {
     position: absolute;
     text-align: center;
     padding: 0 250px;
-    
+
     color: #e0e0e0;
 }
 
@@ -1750,20 +1756,24 @@ p {
 
 
 .footer {
-    padding: 20px 0; /* Ajusta los valores de padding según tus necesidades */
+    padding: 20px 0;
+    /* Ajusta los valores de padding según tus necesidades */
     background-color: #434bb8;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around; /* O utiliza 'space-between' o 'flex-start' según tus necesidades */
+    justify-content: space-around;
+    /* O utiliza 'space-between' o 'flex-start' según tus necesidades */
 }
 
 .copyright {
     background-color: #434bb8;
     text-align: center;
-    padding: 5px 0; /* Ajusta el valor de padding para reducir el espacio horizontal */
-    margin: 0; /* Ajusta el valor de margin para reducir el espacio superior e inferior */
+    padding: 5px 0;
+    /* Ajusta el valor de padding para reducir el espacio horizontal */
+    margin: 0;
+    /* Ajusta el valor de margin para reducir el espacio superior e inferior */
 }
 
 .copyright p {
@@ -1894,7 +1904,7 @@ p {
 
 
 
-    
+
 
 
 
@@ -1917,6 +1927,7 @@ p {
         flex-direction: column;
         margin-bottom: 0;
     }
+
     .ServiciosInicio-1 img {
         height: 100px;
         width: 100px;
@@ -1944,6 +1955,7 @@ p {
         flex-direction: column;
         margin-bottom: 0;
     }
+
     .ContactoInicio-1 img {
         height: 100px;
         width: 100px;
@@ -1954,38 +1966,133 @@ p {
 
 
     .ServiciosPrincipal {
+        display: flex;
         flex-direction: column;
+        /* Cambia la dirección de flex a columna en dispositivos móviles */
     }
 
-    .ServiciosPrincipal-1 {
+    .ServiciosPrincipal-1,
+    .ServiciosPrincipal-2,
+    .ServiciosPrincipal-3 {
         width: 100%;
+        /* Asegura que los elementos ocupen todo el ancho en dispositivos móviles */
         padding: 30px;
+        /* Ajusta el espaciado según tus necesidades */
         text-align: center;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .ServiciosPrincipal-2::before,
+    .ServiciosPrincipal-3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        /* Coloca la superposición sobre la imagen de fondo */
+    }
+
+    .ServiciosPrincipal-1 h2,
+    .ServiciosPrincipal-2 h2,
+    .ServiciosPrincipal-3 h2,
+    .ServiciosPrincipal-1 p,
+    .ServiciosPrincipal-2 p,
+    .ServiciosPrincipal-3 p {
+        position: relative;
+        /* Permite un contexto de apilamiento superior que la superposición */
+        z-index: 2;
+        /* Coloca el texto por encima de la superposición */
+
     }
 
     .ServiciosPrincipal-2,
     .ServiciosPrincipal-3 {
-        display: none;
+        display: block;
+        /* Asegura que las imágenes de fondo se muestren en dispositivos con un ancho ≤ 991px */
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        padding: 20px;
     }
-    
+
+    .ServiciosPrincipal-2 {
+        order: -1;
+        /* Cambia el orden para que ServiciosPrincipal2-2 aparezca primero */
+    }
+
+
+
+
+
+
+
 
 
 
 
     .ServiciosPrincipal2 {
+        display: flex;
         flex-direction: column;
+        /* Cambia la dirección de flex a columna en dispositivos móviles */
     }
 
-    .ServiciosPrincipal2-1 {
+    .ServiciosPrincipal2-1,
+    .ServiciosPrincipal2-2,
+    .ServiciosPrincipal2-3 {
         width: 100%;
+        /* Asegura que los elementos ocupen todo el ancho en dispositivos móviles */
         padding: 30px;
+        /* Ajusta el espaciado según tus necesidades */
         text-align: center;
+        position: relative;
+        padding-bottom: 50px;
+        
+    }
+
+    .ServiciosPrincipal2-2::before,
+    .ServiciosPrincipal2-3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        /* Coloca la superposición sobre la imagen de fondo */
+    }
+
+    .ServiciosPrincipal2-1 h2,
+    .ServiciosPrincipal2-2 h2,
+    .ServiciosPrincipal2-3 h2,
+    .ServiciosPrincipal2-1 p,
+    .ServiciosPrincipal2-2 p,
+    .ServiciosPrincipal2-3 p {
+        position: relative;
+        /* Permite un contexto de apilamiento superior que la superposición */
+        z-index: 2;
+        /* Coloca el texto por encima de la superposición */
+
     }
 
     .ServiciosPrincipal2-2,
     .ServiciosPrincipal2-3 {
-        display: none;
+        display: block;
+        /* Asegura que las imágenes de fondo se muestren en dispositivos con un ancho ≤ 991px */
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        padding: 20px;
     }
+
+    .ServiciosPrincipal2-2 {
+        order: -1;
+        /* Cambia el orden para que ServiciosPrincipal2-2 aparezca primero */
+    }
+
+
 
 
 
@@ -2055,14 +2162,16 @@ p {
 
 
     .principal-content {
-        padding: 20px 0; /* Ajustamos el espacio en la parte superior e inferior */
+        padding: 20px 0;
+        /* Ajustamos el espacio en la parte superior e inferior */
     }
 
     .principal-1 {
-        padding: 10px 0; /* Ajustamos el espacio en los elementos principal-1 */
+        padding: 10px 0;
+        /* Ajustamos el espacio en los elementos principal-1 */
     }
 
-    
+
 
 
 
@@ -2113,7 +2222,7 @@ p {
 
     .principal-group {
         flex-direction: column;
-       
+
     }
 
     .principal-img {
@@ -2298,10 +2407,18 @@ p {
 
     .EquipoEmpresa-1 {
         padding: 0;
+        padding-bottom: 5px;
+        margin-bottom: 45px;
     }
 
-
-
+    .EquipoEmpresa-1 h3,
+    .EquipoEmpresa-1 p {
+        margin: 0; /* Establece el margen en 0 para eliminar el espacio en la parte superior e inferior */
+    }
+    
+    .EquipoEmpresa-1 h2 {
+        margin-bottom: 45px;
+    }
 
 
 
@@ -2320,19 +2437,24 @@ p {
 
     .serviciop-content {
         display: flex;
-        flex-direction: column; /* Cambiamos a dirección de columna */
-        align-items: center; /* Centramos los elementos verticalmente */
+        flex-direction: column;
+        /* Cambiamos a dirección de columna */
+        align-items: center;
+        /* Centramos los elementos verticalmente */
     }
 
     .serviciop-1 {
-        text-align: center; /* Centramos el contenido */
-        margin-bottom: 20px; /* Agregamos margen inferior para separar los elementos */
+        text-align: center;
+        /* Centramos el contenido */
+        margin-bottom: 20px;
+        /* Agregamos margen inferior para separar los elementos */
     }
 
-    
-    
+
+
     .btn-1 {
-        margin-top: 20px; /* Agregamos margen superior al botón para separarlo */
+        margin-top: 20px;
+        /* Agregamos margen superior al botón para separarlo */
     }
 
 
@@ -2341,58 +2463,73 @@ p {
 
     .equipo-content {
         display: flex;
-        flex-direction: column; /* Cambiamos a dirección de columna */
-        align-items: center; /* Centramos los elementos verticalmente */
+        flex-direction: column;
+        /* Cambiamos a dirección de columna */
+        align-items: center;
+        /* Centramos los elementos verticalmente */
     }
 
     .equipo-1 {
-        text-align: center; /* Centramos el contenido */
-        margin-bottom: 20px; /* Agregamos margen inferior para separar los elementos */
+        text-align: center;
+        /* Centramos el contenido */
+        margin-bottom: 20px;
+        /* Agregamos margen inferior para separar los elementos */
     }
-    
+
     .equipo-1 img {
-        width: 350px; /* Hacemos que las imágenes sean responsivas y no excedan su contenedor */
+        width: 350px;
+        /* Hacemos que las imágenes sean responsivas y no excedan su contenedor */
         height: 300px;
     }
 
     .equipo-1 h2 {
-         padding: 30px;
+        padding: 30px;
     }
 
     .general-ubicacion {
-        text-align: center; /* Centra todo el contenido horizontalmente */
+        text-align: center;
+        /* Centra todo el contenido horizontalmente */
     }
 
-    .general-ubicacion-1, .general-ubicacion-2 {
-        width: 100%; /* Asegura que ambos elementos ocupen el ancho completo */
-        margin-bottom: 20px; /* Agrega margen inferior entre ellos */
+    .general-ubicacion-1,
+    .general-ubicacion-2 {
+        width: 100%;
+        /* Asegura que ambos elementos ocupen el ancho completo */
+        margin-bottom: 20px;
+        /* Agrega margen inferior entre ellos */
     }
 
     .general-ubicacion-1 h2 {
-        margin-top: 0; /* Elimina el margen superior del encabezado */
+        margin-top: 0;
+        /* Elimina el margen superior del encabezado */
     }
 
     .general-ubicacion-2 img {
-        max-width: 50%; /* Cambia el tamaño de la imagen al 50% del ancho del contenedor */
-        display: block; /* Elimina cualquier margen adicional alrededor de la imagen */
-        margin: 0 auto; /* Centra horizontalmente la imagen */
+        max-width: 50%;
+        /* Cambia el tamaño de la imagen al 50% del ancho del contenedor */
+        display: block;
+        /* Elimina cualquier margen adicional alrededor de la imagen */
+        margin: 0 auto;
+        /* Centra horizontalmente la imagen */
     }
 
     .general-ubicacion-3 {
         width: 100%;
     }
-    
+
     .general-ubicacion-3 iframe {
         width: 100%;
-        height: 300px; /* Ajusta la altura del mapa para dispositivos pequeños */
-        margin: 0 auto; /* Centra horizontalmente el mapa */
+        height: 300px;
+        /* Ajusta la altura del mapa para dispositivos pequeños */
+        margin: 0 auto;
+        /* Centra horizontalmente el mapa */
     }
 
     .general-ubicacion-1 img {
         height: 250px;
         width: 450px;
         margin: 15px 0;
-      }
+    }
 
 
 
@@ -2400,23 +2537,28 @@ p {
 
     .contactop-group {
         display: flex;
-        flex-direction: column; /* Cambiamos a dirección de columna */
-        align-items: center; /* Centramos los elementos verticalmente */
-        
+        flex-direction: column;
+        /* Cambiamos a dirección de columna */
+        align-items: center;
+        /* Centramos los elementos verticalmente */
+
     }
 
     .contactop-1 {
-        text-align: center; /* Centramos el contenido */
-        margin-bottom: 20px; /* Agregamos margen inferior para separar los elementos */
-        
+        text-align: center;
+        /* Centramos el contenido */
+        margin-bottom: 20px;
+        /* Agregamos margen inferior para separar los elementos */
+
     }
 
     .contactop-1 p {
         padding: 20px;
     }
-    
+
     .btn-1 {
-        margin-top: 20px; /* Agregamos margen superior al botón para separarlo */
+        margin-top: 20px;
+        /* Agregamos margen superior al botón para separarlo */
     }
 
 
