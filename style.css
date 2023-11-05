@@ -209,6 +209,212 @@ body {
 
 
 
+.ServiciosInicio {
+    background-color: #393e92;
+}
+
+
+.ServiciosInicio-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.ServiciosInicio-1 p {
+    font-size: 16px;
+    color: #F9FAFC;
+    padding: 0 25px;
+    margin-bottom: 35px;
+}
+
+.ServiciosInicio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.ServiciosInicio-1 img {
+    height: 100px;
+    width: 100px;
+}
+
+.ServiciosInicio-1 {
+    padding: 0 25px;
+}
+
+.ServiciosInicio-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ServiciosInicio-1 h3 {
+    color: #F9FAFC;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.ServiciosInicio-btn {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #434bb8;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+
+
+
+
+/************************ Esta es la seccion "ContactoInicio" en pestaña index.html ************************/
+
+.ContactoInicio {
+    background-color: #E1E2E6;
+}
+
+
+.ContactoInicio-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.ContactoInicio-1 p {
+    font-size: 16px;
+    color: #434bb8;
+    padding: 0 25px;
+    margin-bottom: 35px;
+}
+
+.ContactoInicio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.ContactoInicio-1 img {
+    height: 100px;
+    width: 100px;
+}
+
+.ContactoInicio-1 {
+    padding: 0 25px;
+}
+
+.ContactoInicio-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ContactoInicio-1 h3 {
+    color: #434bb8;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.ContactoInicio-btn {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #434bb8;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+
+
+/************************ Esta es la seccion "EquipoEmpresa" en pestaña empresa.html ************************/
+
+
+.EquipoEmpresa {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.EquipoEmpresa-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.EquipoEmpresa-1 {
+    padding: 15px 55px;
+}
+
+.EquipoEmpresa-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.EquipoEmpresa-1 h3 {
+    font-size: 25px;
+    color: #323237;
+}
+.EquipoEmpresa h2 {
+    padding-bottom: 25px;
+}
+
+.EquipoEmpresa-btn {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #434bb8;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1561,12 +1767,65 @@ p {
 
 
 
+    
 
 
 
 
 
+    .ServiciosInicio {
+        padding: 30px;
+        background-color: #3c3c8c;
+    }
 
+    .ServiciosInicio-content h2 {
+        padding: 0;
+    }
+
+    .ServiciosInicio-1 p {
+        padding: 0;
+    }
+
+    .ServiciosInicio-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .ServiciosInicio-1 img {
+        height: 100px;
+        width: 100px;
+        padding-top: 35px;
+    }
+
+
+
+
+
+    .ContactoInicio {
+        padding: 30px;
+        background-color: #E1E2E6;
+    }
+
+    .ContactoInicio-content h2 {
+        padding: 0;
+    }
+
+    .ContactoInicio-1 p {
+        padding: 0;
+    }
+
+    .ContactoInicio-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .ContactoInicio-1 img {
+        height: 100px;
+        width: 100px;
+        padding-top: 35px;
+    }
+
+
+
+    
 
 
 
@@ -1869,38 +2128,34 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .blog {
+    .EquipoEmpresa {
         padding: 30px;
     }
 
-    .blog-content {
+    .EquipoEmpresa-content {
         flex-direction: column;
     }
 
-    .blog-1 {
+    .EquipoEmpresa-1 {
         padding: 0;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     .serviciop-content {
@@ -1973,7 +2228,11 @@ p {
         margin: 0 auto; /* Centra horizontalmente el mapa */
     }
 
-    
+    .general-ubicacion-1 img {
+        height: 250px;
+        width: 450px;
+        margin: 15px 0;
+      }
 
 
 
