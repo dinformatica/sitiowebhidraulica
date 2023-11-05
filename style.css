@@ -387,6 +387,133 @@ body {
 
 
 
+.ServiciosPrincipal {
+    display: flex;
+}
+
+.ServiciosPrincipal-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+
+.ServiciosPrincipal-2 {
+    background-image: url(images/Servicios/OleoHidraulica/7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.ServiciosPrincipal-3 {
+    background-image: url(images/Servicios/Neumatica/2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.ServiciosPrincipal h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.ServiciosPrincipal p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+
+}
+
+.ServiciosPrincipal-btn {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #434bb8;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.ServiciosPrincipal2 {
+    display: flex;
+}
+
+.ServiciosPrincipal2-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+
+.ServiciosPrincipal2-2 {
+    background-image: url(images/Servicios/Electrica/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.ServiciosPrincipal2-3 {
+    background-image: url(images/Servicios/Maestranza/3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.ServiciosPrincipal2 h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.ServiciosPrincipal2 p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+
+}
+
+.ServiciosPrincipal2-btn {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #434bb8;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1825,7 +1952,40 @@ p {
 
 
 
+
+    .ServiciosPrincipal {
+        flex-direction: column;
+    }
+
+    .ServiciosPrincipal-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .ServiciosPrincipal-2,
+    .ServiciosPrincipal-3 {
+        display: none;
+    }
     
+
+
+
+
+    .ServiciosPrincipal2 {
+        flex-direction: column;
+    }
+
+    .ServiciosPrincipal2-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .ServiciosPrincipal2-2,
+    .ServiciosPrincipal2-3 {
+        display: none;
+    }
 
 
 
