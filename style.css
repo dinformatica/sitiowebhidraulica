@@ -1971,6 +1971,10 @@ p {
         /* Cambia la dirección de flex a columna en dispositivos móviles */
     }
 
+    .ServiciosPrincipal h2{
+        font-size: 45px;
+    }
+
     .ServiciosPrincipal-1,
     .ServiciosPrincipal-2,
     .ServiciosPrincipal-3 {
@@ -2037,6 +2041,9 @@ p {
         display: flex;
         flex-direction: column;
         /* Cambia la dirección de flex a columna en dispositivos móviles */
+    }
+    .ServiciosPrincipal2 h2{
+        font-size: 45px;
     }
 
     .ServiciosPrincipal2-1,
@@ -2420,7 +2427,7 @@ p {
         margin-bottom: 45px;
     }
 
-    
+
 
 
 
