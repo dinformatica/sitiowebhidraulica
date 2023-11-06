@@ -156,6 +156,78 @@ body {
 }
 
 
+.btn-circulo {
+    display: flex; /* Utiliza flexbox para centrar vertical y horizontalmente el contenido */
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Ancho y alto del botón */
+    height: 50px;
+    background-color: #3c3c8c; /* Cambiado a un color de fondo más oscuro */
+    color: #F9FAFC;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    border: none; /* Elimina el borde */
+    cursor: pointer;
+    text-decoration: none; /* Añadido para quitar el subrayado de los botones enlaces */
+    text-align: center;
+}
+
+.btn-circulo::before {
+    content: url("images/SVG/chevron-down.svg"); /* Ruta al icono SVG */
+    width: 14px; /* Ancho del icono */
+    height: 14px; /* Alto del icono */
+    margin: 0 auto; /* Centra horizontalmente el icono */
+    display: block;
+    left: 24%;
+    top: 24%;
+}
+
+
+
+/* Definir reglas CSS para centrar las secciones */
+.general-inicio,
+.ServiciosInicio,
+.ContactoInicio {
+    scroll-snap-align: center;
+    scroll-margin-top: 50vh; /* La mitad de la altura de la ventana */
+}
+
+/* Definir reglas CSS para las secciones secundarias que no deben centrarse */
+.general-inicio-2,
+.general-inicio-3 {
+    scroll-snap-align: start;
+    scroll-margin-top: 0;
+}
+
+/* Agregar reglas CSS para el contenedor principal que habilita el desplazamiento suave */
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth; /* Para el desplazamiento suave */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-circulo:hover {
+    background-color: #3c3c8c;
+}
+
+
+
+
 .txt-p {
     font-size: 16px;
     color: #414247;
