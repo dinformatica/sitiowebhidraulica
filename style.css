@@ -26,7 +26,7 @@ body {
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)),
-        url(images/bg.jpg);
+        url(images/SeingSpa/SeingSpa-1.jpeg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,6 +35,7 @@ body {
     align-items: center;
 
 }
+
 
 
 .menu {
@@ -281,7 +282,7 @@ body {
 
 .ContactoInicio-1 p {
     font-size: 16px;
-    color: #434bb8;
+    color: #414247;
     padding: 0 25px;
     margin-bottom: 35px;
 }
@@ -308,7 +309,7 @@ body {
 }
 
 .ContactoInicio-1 h3 {
-    color: #434bb8;
+    color: #414247;
     font-size: 20px;
     margin-bottom: 15px;
 
@@ -499,6 +500,62 @@ body {
 }
 
 
+
+
+
+
+
+
+.ContactoInfo {
+    display: flex;
+}
+
+.ContactoInfo-1 {
+    width: 50%;
+    padding: 100px 150px 100px 100px;
+    background-color: #E1E2E6;
+}
+
+.ContactoInfo-2 {
+    background-image: url(images/SeingSpa/SeingSpa-1.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.ContactoInfo h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.ContactoInfo h3 {
+    font-size: 25px;
+    line-height: 70px;
+    color: #323237;
+    text-transform: uppercase;
+
+}
+
+.ContactoInfo p {
+    font-size: 26px;
+    color: #414247;
+    margin: 0;
+
+}
+
+.ContactoInfo-btn {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #434bb8;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
 
 
 
@@ -1756,15 +1813,18 @@ p {
 
 
 .footer {
-    padding: 20px 0;
+    padding: 15px 0;
     /* Ajusta los valores de padding según tus necesidades */
     background-color: #434bb8;
+
+
 }
 
 .footer-content {
     display: flex;
     justify-content: space-around;
-    /* O utiliza 'space-between' o 'flex-start' según tus necesidades */
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 .copyright {
@@ -1772,12 +1832,14 @@ p {
     text-align: center;
     padding: 5px 0;
     /* Ajusta el valor de padding para reducir el espacio horizontal */
-    margin: 0;
+
     /* Ajusta el valor de margin para reducir el espacio superior e inferior */
 }
 
 .copyright p {
     color: #F9FAFC;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -1863,6 +1925,10 @@ p {
 
     .header-content {
         padding: 100px 30px;
+    }
+
+    .header-content .scroll-button {
+        display: none;
     }
 
     .header-content p {
@@ -1971,7 +2037,7 @@ p {
         /* Cambia la dirección de flex a columna en dispositivos móviles */
     }
 
-    .ServiciosPrincipal h2{
+    .ServiciosPrincipal h2 {
         font-size: 45px;
     }
 
@@ -2042,7 +2108,8 @@ p {
         flex-direction: column;
         /* Cambia la dirección de flex a columna en dispositivos móviles */
     }
-    .ServiciosPrincipal2 h2{
+
+    .ServiciosPrincipal2 h2 {
         font-size: 45px;
     }
 
@@ -2056,7 +2123,7 @@ p {
         text-align: center;
         position: relative;
         padding-bottom: 50px;
-        
+
     }
 
     .ServiciosPrincipal2-2::before,
@@ -2101,6 +2168,74 @@ p {
 
 
 
+
+
+
+    .ContactoInfo {
+        display: flex;
+        flex-direction: column;
+        /* Cambia la dirección de flex a columna en dispositivos móviles */
+    }
+
+    .ContactoInfo h2 {
+        font-size: 40px;
+    }
+
+    .ContactoInfo h3 {
+        font-size: 30px;
+    }
+
+    .ContactoInfo p {
+        font-size: 25px;
+    }
+
+
+    .ContactoInfo-1,
+    .ContactoInfo-2 {
+        width: 100%;
+        /* Asegura que los elementos ocupen todo el ancho en dispositivos móviles */
+        padding: 30px;
+        /* Ajusta el espaciado según tus necesidades */
+
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .ContactoInfo-2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        /* Coloca la superposición sobre la imagen de fondo */
+    }
+
+    .ContactoInfo-1 h2,
+    .ContactoInfo-2 h2,
+    .ContactoInfo-1 p,
+    .ContactoInfo-2 p {
+        position: relative;
+        /* Permite un contexto de apilamiento superior que la superposición */
+        z-index: 2;
+        /* Coloca el texto por encima de la superposición */
+
+    }
+
+    .ContactoInfo-2 {
+        display: block;
+        /* Asegura que las imágenes de fondo se muestren en dispositivos con un ancho ≤ 991px */
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .ContactoInfo-2 {
+        order: -1;
+        /* Cambia el orden para que ServiciosPrincipal2-2 aparezca primero */
+    }
 
 
 
@@ -2218,6 +2353,8 @@ p {
         padding: 30px;
         text-align: center;
     }
+
+    
 
     .general-inicio-2,
     .general-inicio-3 {
@@ -2420,9 +2557,10 @@ p {
 
     .EquipoEmpresa-1 h3,
     .EquipoEmpresa-1 p {
-        margin: 0; /* Establece el margen en 0 para eliminar el espacio en la parte superior e inferior */
+        margin: 0;
+        /* Establece el margen en 0 para eliminar el espacio en la parte superior e inferior */
     }
-    
+
     .EquipoEmpresa-1 h2 {
         margin-bottom: 45px;
     }
