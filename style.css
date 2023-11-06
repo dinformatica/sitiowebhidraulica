@@ -2730,6 +2730,14 @@ p {
         padding: 10px;
     }
 
+    .footer-content h3 {
+        font-size: 25px;
+    }
+
+    .footer-content .link a {
+        font-size: 20px;
+    }
+
 
 
 }
