@@ -1907,13 +1907,30 @@ p {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #323237;
+        background-color: #E1E2E6;
         display: none;
     }
 
     .menu .navbar ul li {
         width: 100%;
     }
+
+    .menu .navbar a:hover {
+        background: #434bb8;
+        color: #E1E2E6;
+        transition: all 0.5s ease;
+        border-radius: 1px;
+    
+    }
+    
+    .menu .navbar a.selected {
+        background: #434bb8;
+        color: #E1E2E6;
+        border-radius: 1px;
+        transition: all 0.5s ease;
+    
+    }
+
 
     #menu:checked~.navbar {
         display: initial;
@@ -2354,15 +2371,10 @@ p {
         text-align: center;
     }
 
-    
-
     .general-inicio-2,
     .general-inicio-3 {
         display: none;
     }
-
-
-
 
     .principal-group {
         flex-direction: column;
